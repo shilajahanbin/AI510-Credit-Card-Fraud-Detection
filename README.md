@@ -1,6 +1,6 @@
 # AI510 Real-Time Credit Card Fraud Detection
 
-##Project Overview
+## Project Overview
 
 This project focuses on detecting fraudulent credit card transactions using machine learning and deep learning techniques.
 The system analyzes transaction data, identifies anomalies, and simulates real-time fraud detection.
@@ -35,13 +35,15 @@ The system analyzes transaction data, identifies anomalies, and simulates real-t
 
 ### Isolation Forest
 
-* Moderate fraud detection performance
+* Better performance in detecting fraudulent transactions
+* Higher recall compared to AutoEncoder
 * ROC-AUC ≈ 0.67
 
 ### AutoEncoder
 
-* Strong anomaly detection capability
+* Strong overall discrimination capability
 * ROC-AUC ≈ 0.93
+* Lower recall, meaning some fraud cases were missed
 
 ## Real-Time Simulation
 
@@ -56,7 +58,7 @@ The system simulates real-time transactions by:
 
 * `AI510_Real_Time_Credit_Card_Fraud_Detection.ipynb` → Main notebook
 * `simulation_results.csv` → Simulation output
-  
+
 ## Technologies Used
 
 * Python
@@ -67,7 +69,11 @@ The system simulates real-time transactions by:
 
 ## Conclusion
 
-The AutoEncoder model significantly outperforms Isolation Forest for fraud detection in highly imbalanced datasets.
+Both models demonstrate different strengths in fraud detection.
+Isolation Forest performs better in identifying fraudulent transactions, while AutoEncoder provides strong overall anomaly detection capability with a high ROC-AUC score.
+
+This highlights the trade-off between recall and overall model performance in highly imbalanced datasets.
+
 
 ## Author
 
